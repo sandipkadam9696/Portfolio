@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+
+ 
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    <!-- Font Awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- AOS CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+  
+</head>
+<body>
+
+    <!-- ===== Header with Navigation Bar ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Home Section ===== -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <div class="text">
+                <h3>Hello, It's Me</h3>
+                <h1>Sandip Kadam</h1>
+             
+                <p>I am a <span id="role">Web Developer</span></p>
+
+                  <div class="social-links">
+                    <a href="https://github.com/sandipkadam9696" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sandip-kadam-53055431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sandip_kadam_9696" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1BkYXveYt7/" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="mailto:sandipkadam928462@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+        </div>
+
+           
+            <div class="image">
+                <img src="{% static 'home/img/WhatsApp Image 2025-07-06 at 12.47.17_ae21a03d.jpg' %}" alt="profile-img" class="home-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Other Sections ===== -->
+ <section id="about" class="about-section" data-aos="fade-up">
+
+    <h2>About Me</h2>
+    <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+  <p>Hello! I'm <strong>Sandip Kadam</strong>, a passionate and dedicated web developer currently pursuing my Bachelor of Computer Science (BCS).</p>
+    
+    <div id="more-text" style="display: none;">
+        <p>I specialize in building modern, responsive websites using <strong>Python</strong>, <strong>Django</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
+        <p>With a strong interest in backend development and problem-solving, I enjoy turning ideas into real-world applications.</p>
+        <p>When I’m not coding, I love exploring tech trends, building side projects, and continuously learning new skills.</p>
+    </div>
+
+    <button class="read-more-btn" onclick="toggleText()">Read More</button>
+        </div>
+        <div class="about-img" data-aos="fade-left">
+
+            <img src="{% static 'F:\Portfolio\portfolio\static\home\img\WhatsApp Image 2025-07-07 at 15.42.37_b6e2bbb4.jpg' %}" alt="About Me">
+        </div>
+    </div>
+</section>
+ <!-- ===== Skill section ===== -->
+   <section id="skills" class="skills-section" data-aos="fade-up">
+    <h2>My Skills</h2>
+
+    <div class="skills-category">
+        <h3>Languages</h3>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS</div>
+            <div class="skill-card"><i class="fab fa-js-square"></i> JavaScript</div>
+            <div class="skill-card"><i class="fab fa-java"></i> Java</div>
+            <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card"><i class="fas fa-database"></i> SQL</div>
+        </div>
+    </div>
+
+    <div class="skills-category">
+        <h3>Frameworks</h3>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-python"></i> Django</div>
+        </div>
+    </div>
+
+    <div class="skills-category">
+        <h3>Tools</h3>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fas fa-code"></i> VS Code</div>
+            <div class="skill-card"><i class="fab fa-github"></i> GitHub</div>
+            <div class="skill-card"><i class="fas fa-terminal"></i> PyCharm</div>
+            <div class="skill-card"><i class="fas fa-database"></i> MySQL Workbench</div>
+        </div>
+    </div>
+
+    <div class="skills-category">
+        <h3>Operating System</h3>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-windows"></i> Windows</div>
+        </div>
+    </div>
+</section>
+<!-- ===== work section ===== -->
+
+    <section id="work" class="work-section" data-aos="fade-up">
+    <h2>My Work</h2>
+
+    <div class="work-grid">
+        <div class="work-card">
+            <img src="{% static 'F:\Portfolio\portfolio\static\home\img\istockphoto-104731717-612x612.jpg' %}" alt="Hotel Reservation System">
+            <div class="work-info">
+                <h3>Hotel Room Reservation System</h3>
+                <p>A Python Basd (tkinter) Desktop application to manage room booking, availability, and user roles with admin dashboard.And saving a Data user securely in database.</p>
+                <a href="https://github.com/sandipkadam9696" target="_blank">
+                    <button class="view-btn"><i class="fas fa-external-link-alt"></i> View Project</button>
+                </a>
+            </div>
+        </div>
+        <!-- Add more projects like this by duplicating work-card -->
+    </div>
+</section>
+
+<!--contact section-->
+
+<section id="contact" class="contact-section" data-aos="fade-up">
+    <h2>Contact Me</h2>
+
+    <div class="contact-details">
+        <p><strong>Name:</strong> Sandip Sunil Kadam</p>
+        <p><strong>Location:</strong> Baramati, Maharashtra</p>
+        <p><strong>Mobile:</strong> <a href="tel:+919284627092">+91 92846 27092</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sandipkadam928462@example.com">sandipkadam@example.com</a></p>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sandip_kadam_9696?igsh=N3V4Njk4OTBkMHp3" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1BkYXveYt7/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/sandip-kadam-53055431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sandipkadam9696" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            
+    </div>
+</section>
+
+    <!-- ✅ JavaScript file should be included just before </body> -->
+     <!-- ===== Scripts ===== -->
+    <script src="{% static 'home/js/main.js' %}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+</html>
